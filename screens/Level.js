@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View, SafeAreaView, Pressable, Image, Dimensions } from 'react-native'
+import {Alert, StyleSheet, Text, View, SafeAreaView, Pressable, Image, Dimensions } from 'react-native'
 
 
 
@@ -180,11 +180,13 @@ function Level (props) {
         const result = calculateWinner(markers);
         if(result!=null) {
         if (result == 'tie') {
-            alert('Tie!')
-            resetMarkers()
+          Alert.alert('Result', 'Tie', [
+            {text: 'OK', onPress: () => resetMarkers()},
+          ])
           } else {
-            alert(`Player ${result} Won!`)
-            resetMarkers()
+            Alert.alert('Result', `Player ${result} Won!`, [
+            {text: 'OK', onPress: () => resetMarkers()},
+            ])
           }
         }
     }, [markers])
