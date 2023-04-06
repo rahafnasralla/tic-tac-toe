@@ -180,10 +180,12 @@ function Level (props) {
         const result = calculateWinner(markers);
         if(result!=null) {
         if (result == 'tie') {
+          //tie
           Alert.alert('Result', 'Tie', [
             {text: 'OK', onPress: () => resetMarkers()},
           ])
           } else {
+          //winning
             Alert.alert('Result', `Player ${result} Won!`, [
             {text: 'OK', onPress: () => resetMarkers()},
             ])
