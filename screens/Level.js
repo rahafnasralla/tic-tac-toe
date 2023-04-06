@@ -165,7 +165,7 @@ function Level (props) {
         }
         }
 
-    useEffect(()=> {bestMove(markers)},[])
+    useEffect(()=> {if(props.players=='1')bestMove(markers)},[])
 
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
