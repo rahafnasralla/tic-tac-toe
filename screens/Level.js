@@ -137,17 +137,32 @@ function Level (props) {
     
      
     const markPosition = (i,j) => {
+      if(props.players=='1') {
         let temp = [...markers]
         if (active_player === 'O') {
             if (markers[i][j]=='') {
                 temp[i][j] = active_player
                 setMarkers(temp)
                 setActive_player('X')
+                if(calculateWinner(markers)===null) {
                 bestMove(temp)
                 setMarkers(temp)
-                
+                }
             }
           }
+        }
+        else if (props.players=='2') {
+          if(!markers[i][j]){
+            let temp = [...markers]
+            temp[i][j] = active_player
+            setMarkers(temp)
+            if(active_player === 'X'){
+              setActive_player('O')
+            }else{
+              setActive_player('X')
+            }
+          }
+        }
         }
 
     useEffect(()=> {bestMove(markers)},[])
@@ -172,8 +187,16 @@ function Level (props) {
 
       
     const resetMarkers = () => {
+      if(props.players=='1') {
         setActive_player('O')
-        setTemp()
+        setTemp() }
+        else if (props.players=='2') {
+          setMarkers([ 
+            ['', '', ''],
+            ['', '', ''],
+            ['', '', '']
+          ])
+        }
     }
 
     useEffect(() => {

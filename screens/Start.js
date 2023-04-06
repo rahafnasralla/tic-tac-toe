@@ -46,7 +46,7 @@ function Start({ navigation }) {
                     <Button
                         title=" Let’s play"
                         color={'black'}
-                        onPress={() => navigation.navigate('Levels')}
+                        onPress={() => navigation.navigate('One_OR_Two')}
                     />
                 </View>
             </View>

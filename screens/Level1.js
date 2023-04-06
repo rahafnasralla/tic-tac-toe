@@ -4,7 +4,7 @@ import Level from './Level';
 function Level1 () {
 
     return (
-    <Level level="hard"/>
+    <Level level="hard" players='1'/>
     )
     }
 
