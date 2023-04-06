@@ -18,7 +18,7 @@ function One_OR_Two({ navigation }) {
                         title=" One Player"
                         color={'white'}
                         textAlignVertical={50}
-                        onPress={() => navigation.navigate('Levels')}
+                        onPress={() => navigation.navigate('One Player')}
 
 
                     />
@@ -30,7 +30,7 @@ function One_OR_Two({ navigation }) {
                         title="Two Players"
                         color={'white'}
                         textAlignVertical={50}
-                        onPress={() => navigation.navigate('TwoPlayers')}
+                        onPress={() => navigation.navigate('Two Players')}
 
                     />
                 </View>

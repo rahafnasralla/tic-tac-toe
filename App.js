@@ -18,13 +18,13 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Start">
-        <Stack.Screen name="Start" component={Start} />
-        <Stack.Screen name="One_OR_Two" component={One_OR_Two}/>
-        <Stack.Screen name="Levels" component={Levels} />
-        <Stack.Screen name="TwoPlayers" component={TwoPlayers} />
-        <Stack.Screen name="Level1" component={Level1} />
-        <Stack.Screen name="Level2" component={Level2} />
-        <Stack.Screen name="Level3" component={Level3} />
+        <Stack.Screen name="Tic Tac Toe" component={Start} />
+        <Stack.Screen name="One Or Two Players" component={One_OR_Two}/>
+        <Stack.Screen name="One Player" component={Levels} />
+        <Stack.Screen name="Two Players" component={TwoPlayers} />
+        <Stack.Screen name="Hard" component={Level1} />
+        <Stack.Screen name="Medium" component={Level2} />
+        <Stack.Screen name="Easy" component={Level3} />
 
       </Stack.Navigator>
     </NavigationContainer>

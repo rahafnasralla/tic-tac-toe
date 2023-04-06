@@ -24,7 +24,7 @@ function Levels({ navigation }) {
                         title=" Hard"
                         color={'white'}
                         textAlignVertical={50}
-                        onPress={() => navigation.navigate('Level1')}
+                        onPress={() => navigation.navigate('Hard')}
 
 
                     />
@@ -36,7 +36,7 @@ function Levels({ navigation }) {
                         title="Medium"
                         color={'white'}
                         textAlignVertical={50}
-                        onPress={() => navigation.navigate('Level2')}
+                        onPress={() => navigation.navigate('Medium')}
 
 
                     />
@@ -48,7 +48,7 @@ function Levels({ navigation }) {
                         title="Easy"
                         color={'white'}
                         textAlignVertical={50}
-                        onPress={() => navigation.navigate('Level3')}
+                        onPress={() => navigation.navigate('Easy')}
 
 
                     />
